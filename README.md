@@ -2,8 +2,8 @@
 we implemented a deep learning based video compression system for video conferencing over the internet, allowing smooth chat even when the internet connection is slow. At first, when connection is made, a reference image is sent to the receiver, in the next frames we only send the keypoints of the face, which is much smaller in size compared to the entire frame, and the receiver reconstructs the image using these landmarks and the reference image, which is the key idea of the compression in our system. To maintain the accuracy of the image being reconstructed, we proposed a feedback network in decoder side, which takes the reconstructed image, and outputs a number predicting the rate of distortion in that image and send it back to the encoder. The encoder then decides whether to update the reference image or continue sending landmarks, by comparing this value with a predetermined threshold.
 Evaluation experiments demonstrates that we can save up to 73% of bitrate compared to HEVC with almost the same image quality. 
 the system is implemented in python and pytorch following this schema.
-![codec - Copy](https://github.com/BaherMh/Deep-learning-based-codec-for-video-conferencing/assets/105556066/c93570f7-2986-4309-aa8d-eab1f39582e9)
 
+![codec - Copy](https://github.com/BaherMh/Deep-learning-based-codec-for-video-conferencing/assets/105556066/c93570f7-2986-4309-aa8d-eab1f39582e9)
 
 # pretrained chackpoints
 we build our system using the repository Thin-Plate-Spline-Motion-Model, and you can found the pretrained weights in their project link https://github.com/yoyo-nb/Thin-Plate-Spline-Motion-Model
