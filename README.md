@@ -6,8 +6,7 @@ the system is implemented in python and pytorch following this schema.
 ![codec - Copy](https://github.com/BaherMh/Deep-learning-based-codec-for-video-conferencing/assets/105556066/c93570f7-2986-4309-aa8d-eab1f39582e9)
 
 # pretrained chackpoints
-we build our system using the repository Thin-Plate-Spline-Motion-Model, and you can found the pretrained weights in their project link https://github.com/yoyo-nb/Thin-Plate-Spline-Motion-Model
-
+we build our system using the repository Thin-Plate-Spline-Motion-Model, and you can found the pretrained weights in their project link <a href="https://github.com/yoyo-nb/Thin-Plate-Spline-Motion-Model" target="_blank">Thin-Plate-Spline-Motion-Model</a>
 # Animation Demo
 
 the parameters you can specify before running are "video_file" which corresponds to the path of the video you want to compress, "quantization" which is the quantization factor used in the algorithm of compressing keypoints before sending which is golomb coding, "output_path" which is the path to the result video, and "gap" which specify every how many frames the feedback network work and send back the rate of distortion in the reconstructed image.
